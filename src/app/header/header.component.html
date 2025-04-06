@@ -1,0 +1,9 @@
+<header class="header">
+    <div class="container">
+        <h1 class="logo">MINI CART</h1>
+        <div class="cart-icon" (click)="goToCart()">
+            <fa-icon [icon]="faShoppingCart"></fa-icon>
+            <span class="badge">{{ cartItemCount$ | async }}</span>
+        </div>
+    </div>
+</header>
